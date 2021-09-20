@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+.main-font{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+body {
+    /* background: #cae7df; */
+}
+
+.section {
+    margin-bottom: 4em !important;
+}
+.wrapper {
+    min-height: 100vh !important;
+    position: relative;
+}
+
+#picture-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+#ring {
+    position:relative;
+    left: 50%;
+    margin-left: -18em;
+    height:20em;
+    width:20em;
+    opacity: 0.3;
+}
+
+#pic {
+    position: relative;
+    left: 50%;
+    margin-left: -7.5em;
+    /* margin-top: 2.5em; */
+    height:15em;
+    width:15em;
+    border-radius: 50%;
+    border: dashed 1px black;
+    padding: 1em;
+    background-color: white;
+}
+
+#text-body{
+    /* min-height: 100vh; */
+    max-width: 70%;
+    width: 50em;
+    margin: auto;
+    /* margin-top: 8em; */
+    border: 1px dashed linear-gradient(to right, #DD2476, #FF512F);
+    /* padding: 2%; */
+    border-radius: 5px;
+    margin-top: 3em;
+}
+
+#intro-text {
+    margin-bottom: -5em;
+    padding: 1em;
+    border: 1px dashed black;
+    border-radius: 5px;
+    margin-top: -8em;
+    padding-top: 8em;
+    text-align: justify;
+}
+
+a {
+    color: #40E0D0;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FF512F;  /* fallback for old browsers */
+    color: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar {
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* color: white; */
+    border-bottom: 1px dashed black;
+    background: white !important;
+    color: black !important;
+}
+
+.nav-link, .navbar-brand {
+    color: white !important;
+    color: black !important;
+    /* font-family: 'Josefin Sans', sans-serif !important; */
+}
+
+a.active.nav-link{
+    color: #FF512F !important;
+    font-weight: 400 !important;
+    /* font-style: italic !important; */
+    /* border-top: 2px solid black; */
+}
+
+.nav-link:hover {
+    color: #FF512F !important;
+    transition: 0.3s;
+}
+
+.publication-item {
+    padding:0.5em;
+    /* border: 0.5px solid #f7d9d2; */
+    /* border-top: none; */
+
+    border-left: 2px dashed white;
+    /* border-bottom: 2px solid #FF512F; */
+    margin-bottom: 0.5em;
+    border-radius: 0px 2px;
+}
+
+.navbar {
+    position: relative;
+}
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -25px !important;  /* 50% of your logo width*/
+}
+
+.toggle-button {
+    border: 0.5px dashed black !important;
+}
+
+.pub-details {
+    display: flex;
+}
+
+.authors{
+    width:70%;
+}
+
+.date{
+    text-align: right;
+    width: 30%;
+}
+
+.publication-item:hover {
+    /* background-color:darkgray */
+    /* opacity: 0.6; */
+    transition: 0.3s;
+    border-left: 2px dotted #FF512F;
+    border-top: none;
+}
+
+.publication-item * {
+    margin-bottom: 0px;
+}
+
+.pub-title {
+    font-size: 1.25em;
+    margin-bottom: 0px;
+}
+
+.footer-div {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    /* background: black; */
+    /* justify-content: center; */
+    /* height: 1em; */
+    /* border-top: 1px dashed black; */
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.social-icons {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    width: 100%;
+    /* background: black; */
+    justify-content: center;
+    /* height: 1em; */
+    /* border-top: 1px dashed black; */
+    display: flex;
+    flex-direction: row;
+}
+
+/* .gradient-color{
+    color: #654ea3;  /* fallback for old browsers */
+    /* color: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  Chrome 10-25, Safari 5.1-6 */
+    /* color: linear-gradient(to right, #eaafc8, #654ea3); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* } */
