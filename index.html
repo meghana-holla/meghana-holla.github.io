@@ -1,84 +1,318 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Meghana Holla</title>
-        <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-grey.png"/>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@200;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <script src="./assets/js/mechanics.js"></script>
     </head>
 
     <body class="main-font">
-      
-        <div class="wrapper">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-                <a class="navbar-brand logo" href="#">
-                  <img src="./images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                </a>
-                <!-- <a class="navbar-brand brand" href="#">Meghana Holla</a> -->
-                <button class="navbar-toggler toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ms-auto">
-                    <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                    <a class="nav-link" href="about.html">About</a>
-                    <a class="nav-link" href="comingsoon.html">Blog</a>
-                    <!-- <a class="nav-link" href="comingsoon.html">Extras</a> -->
-                    <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-                  </div>
-                </div>
-              </div>
-          </nav>
-
-          <div id="text-body">
-            <div id="picture-container">
-              <img id="pic" src="./images/meghana.JPG">
-              <!-- <img id="ring" src="./images/ring.png"> -->
+    <div class="box">
+    <div id="burger" ><i class="icon fa fa-bars"></i></div>      
+    <div class="header">
+        <div style="clear:both"></div>
+        <div class="name-section">
+            
+            <img src="./assets/images/mh-white.png" style="width:100px; height:100px;margin:auto;">
+            <h1>Meghana Holla</h1>
+            
+            <div style="margin:auto; justify-content: space-around;display: flex;">
+                <a href="https://www.linkedin.com/in/meghana-holla" class="icon fa fa-linkedin"></a>
+                <a href="https://github.com/meghana-holla" class="icon fa fa-github"></a>
+                <!-- <a href="#" class="icon fa fa-twitter"></a> -->
+                <a href="https://scholar.google.com/citations?user=kl_pNCwAAAAJ&hl=en"><i class="icon ai ai-google-scholar"></i></a>
+                <a href="mailto:mmeghana@vt.edu" class="icon fa fa-envelope-o"></a>
             </div>
+        </div>
+        <div class="nav-items-list">
+            <div class="nav-items"><a href="#about-me">About Me</a></div>
+            <div class="nav-items"><a href="#publications">Publications</a></div>
+            <div class="nav-items"><a href="#work-experience">Work Experience</a></div>
+            <div class="nav-items"><a href="#resume" onclick="window.open('https://tinyurl.com/resume-meghana')">Resume</a></div>
+        </div>
+    </div>
+    <div class="content-new">
+        <div class="content-item" id="about-me" style="padding:20px; padding-top:2em;">
+            <img id="profile-pic" src="assets/images/meghana-pic.JPG">
+            <h2>About Me</h2>
+            <p>
+              Hello! I am a Graduate Student at Virginia Tech pursuing my Master of Science in Computer Science. My coursework mainly focuses on the areas of Machine Learning & Artifical Intelligence, Data & Information and Human Computer Interaction. I am part of Dr. Ismini Lourentzou’s research group and working on on working on Multimodal ML catering to language and vision, specifically, Natural Language Grounding in Videos.
+            </p>
+            <p>
+              I hold a Bachelor’s (B.Tech) degree in Computer Science and Engineering with specialization in Data Science from PES University, Bangalore, India. My undergraduate thesis titled "Dialog-Driven Face Generation usin GANs" falls in the area of generation conditional image generation. To elaborate, the work caters to the problem of generating a human face conditioned upon a natural language description. The contributions of the work were two-fold:
+            </p>
+            <ul>
+              <li>
+                A description-driven face generation module, which is capable of generating a face and also making corrections to the generated face through iterative natural language feedback. The multi-pass nature enables a communication with the generator model to be in the form of a dialog.
+              </li>
+              <li>
+                An effective pipeline which includes a speech-to-text module for ergonomic interfacing, making interactions with the model more organic.
+              </li>
+            </ul>
+            <p>The work was <a id="normal-link" href="https://doi.org/10.1109/ICTAI50040.2020.00104">accepted</a> for publication at the 32nd IEEE International Conference
+              on Tools with Artificial Intelligence (ICTAI 2020) held in Baltimore, MD (Acceptance rate: 25%)</p>
 
-            <div id="intro-text">My name is Meghana Holla. I am a Computer Science graduate student at Virginia tech. I currently work as a Graduate Teachaing Assistant for the Department of Computer Science at Virginia Tech<br>
-            My research focus is on Machine learning with emphasis on Deep Learning and Natural Language Processing. Click <a href="about.html">here</a> to know more about me!</div>
-            <!-- <h2>Page under construction.. Check in a few days maybe?</h2> -->
+            <h4>Research Focus</h4>
+            <div class="fancy-list">
+                <div class="fancy-item">
+                  <span></span>
+                  Natural Language Processing<br>
+                </div>
+                <div class="fancy-item"><span></span>Multimodal ML (Vision and Text)</div>
+                <div class="fancy-item"><span></span>Zero-Shot Learning</div>
+                <div class="fancy-item"><span></span>Multimodal Information Retrieval</div>
+            </div>
+            <br>
+            <h4>Skills</h4>
+
+            <b>Programming Languages:</b>
+            <ul class="skill-list">
+              <li>
+                Proficient: 
+                <span class="skill">Python</span>
+                <span class="skill">C</span>
+                <span class="skill">Java</span>
+              </li>
+              <li>
+                Intermediate:
+                <span class="skill">C++</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">R</span>
+              </li>
+              <li>
+                Familiar:
+                <span class="skill">Matlab</span>
+              </li>
+            </ul>
+            <b>Frameworks and Tools:</b>
+            <ul class="skill-list">
+                <li>
+                  Machine Learning: 
+                  <span class="skill">PyTorch</span>
+                  <span class="skill">Keras</span>
+                  <span class="skill">Tensorflow</span>
+                  <span class="skill">NLTK</span>
+                  <span class="skill">Spacy</span>
+                </li>
+                <li>
+                  Web Development: 
+                  <span class="skill">Flask</span>
+                  <span class="skill">Django</span>
+                  <span class="skill">Spring</span>
+                  <span class="skill">Angular</span>
+                  <span class="skill">HTML</span>
+                  <span class="skill">CSS</span>
+                </li>
+                <li>
+                  Search:
+                  <span class="skill">Apache Solr</span>
+                  <span class="skill">Lucidworks Fusion</span>
+                  <span class="skill">Azure Cognitive Search (Familiar)</span>
+                </li>
+                <li>
+                  Miscelleaneous:
+                  <span class="skill">Git</span>
+                  <span class="skill">Docker</span>
+                  <span class="skill">AWS</span>
+                  <span class="skill">TeamCity</span>
+                </li>
+              </ul>
+        </div>
+        <div class="content-item" id="publications" style="padding:20px;">
+            <h2>Publications</h2>
+            <ul>
+              <li>
+                <div>
+                  <span class="paper-title">
+                    Dialog Driven Face Construction using GANs - ICTAI 2020
+                  </span><br>
+                  <span class="paper-authors">
+                    Malaika Vijay, Meghana, Nishant Aklecha, Ramamoorthy Srinath
+                  </span>
+                  <br>
+                  <span class="paper-links">
+                    <span class="paper-link">
+                      <a target="blank" href="https://doi.org/10.1109/ICTAI50040.2020.00104">Paper</a>
+                    </span>
+                    <span class="paper-link">
+                      <a target="blank" href="assets/docs/DialogDrivenFaceGeneration.pdf">Slides</a>
+                    </span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="paper-title">
+                    Detection of Emphasis Words in Short Texts – A Context Aware Label Distribution Learning Approach" - ICAICR 2020
+                  </span><br>
+                  <span class="paper-authors">
+                    Meghana, Bhaskarjyoti Das
+                  </span>
+                  <br>
+                  <span class="paper-links">
+                    <span class="paper-link">
+                      <a target="blank" href="https://doi.org/10.1007/978-981-16-3660-8_32">Paper</a>
+                    </span>
+                    <span class="paper-link">
+                      <a target="blank" href="assets/docs/EmphasisDetection.pdf">Slides</a>
+                    </span>
+                    
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="paper-title">
+                    Polarity Estimation in a Signed Social Graph Using Graph Features - SCEECS 2020
+                  </span><br>
+                  <span class="paper-authors">
+                    Meghana Holla, Nishant Aklecha, Ornella I. Dsouza and Bhaskarjyoti Das
+                  </span>
+                  <br>
+                  <span class="paper-links">
+                    <span class="paper-link">
+                      <a target="blank" href="https://doi.org/10.1109/SCEECS48394.2020.145">Paper</a>
+                    </span>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="paper-title">
+                    On Detectors and Descriptors based Techniques for Face Recognition - ICCIDS 2018
+                  </span><br>
+                  <span class="paper-authors">
+                    Vinay A, Nishant Aklecha,  Meghana, K.N. Balasubramanya Murthy, S Natarajan
+                  </span>
+                  <br>
+                  <span class="paper-links">
+                    <span class="paper-link">
+                      <a target="blank" href="https://doi.org/10.1016/j.procs.2018.05.106">Paper</a>
+                    </span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+      </div>
+
+      <div class="content-item" id="work-experience" style="padding:20px;">
+        <h2>Work Experience</h2>
+        <h4>Research and Teaching Experience</h4>
+        <div class="job-item">
+          <div class="job-left">
+            Sept 2021 - Present
           </div>
-          <div id="footer" class="footer-div">
-            <footer class="social-icons">
-              <a id="linkedin" href="https://www.linkedin.com/in/meghana-holla/" class="nav-link">
-                <img src="./images/socials/linkedin.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a>
-              <a id="github" href="https://github.com/meghana-holla" class="nav-link">
-                <img src="./images/socials/github.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a>
-              <!-- <a id="kaggle" class="nav-link">
-                <img src="./images/socials/kaggle.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a> -->
-              <a id="scholar" href="https://scholar.google.com/citations?user=kl_pNCwAAAAJ&hl=en" class="nav-link">
-                <img src="./images/socials/gscholar.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a>
-              <a id="email" href="mailto:mmeghana@vt.edu" class="nav-link">
-                <img src="./images/socials/email.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a>
-              <!-- <a id="instagram" class="nav-link">
-                <img src="./images/socials/instagram.png" width="30" height="30" class="d-inline-block align-top" alt="">
-              </a> -->
-            </footer>
+        <div class="job-right">
+            <b>Virginia Tech</b>
+            <br>
+            Graduate Research
+            <br>
+            Student Researcher working with Dr. Ismini Lourentzou; Conducting research on Multimodal Machine Learning (Text+Video)
+        </div>
+        </div>
+
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
+            Aug 2021 - Present
+          </div>
+          <div class="job-right">
+            <b>Virginia Tech Department of Computer Science</b>
+            <br>
+            Graduate Teaching Assistant
+            <br>
+            Fall 2021 - Computer Organization 1
+            <br>
+            Spring 2022 - Introduction to Software Design
           </div>
         </div>
-        <!-- <script>addLinks()</script> -->
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
+            Aug 2019 - Dec 2019
+          </div>
+          <div class="job-right">
+            <b>Center for Pattern Recognition and Machine Intelligence, PES University</b>
+            <br>
+            Undergraduate Research Assistant; Conducted research on Facial Recognition and Semantic Segmentation of clothing images
+            <br>
+          </div>
+        </div>
+        <br>
+        <h4>Professional Experience</h4>
+        <div class="job-item">
+          <div class="job-left">
+            Aug 2020 - Aug 2021
+          </div>
+          <div class="job-right">
+            <b>Morgan Stanley</b>
+            <br>
+            Technology Associate 
+            <br>
+            Technologies: Python, Java, Apache Solr, Lucidworks Fusion, Kafka, KSQL
+          </div>
+        </div>
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
+            Jan 2020 - Jun 2020
+          </div>
+          <div class="job-right">
+            <b>Morgan Stanley</b>
+            <br>
+            Technology Analyst Intern 
+            <br>
+            Technologies: Python (Flask), Angular, DB2
+          </div>
+        </div>
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
+            May 2019 - Jul 2019
+          </div>
+          <div class="job-right">
+            <b>Morgan Stanley</b>
+            <br>
+            Summer Analyst 
+            <br>
+            Technologies: Java, Angular, D3.js
+          </div>
+        </div>
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
+            July 2018 - Aug 2018
+          </div>
+          <div class="job-right">
+            <b>MapmyIndia</b>
+            <br>
+            Machine Learning Intern
+            <br>
+            Technologies: Python, Tensoflow, Linux
+          </div>
+        </div>
+    </div>
+
+
+    <div class="content-item" id="resume" style="padding:20px;min-height:65vh;">
+      <h2>Resume</h2>
+      You can find my resume <a id="normal-link" href="https://tinyurl.com/resume-meghana">here</a>
+      </div>
+    </div>
+    </div>
     </body>
 </html>
+
