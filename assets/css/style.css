@@ -301,7 +301,7 @@ a.active.nav-link{
     height:2em;
 }
 
-.job-right>b {
+.job-right>b:first-child {
     font-size: medium;
 }
 
