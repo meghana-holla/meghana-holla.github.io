@@ -1,16 +1,16 @@
 window.addEventListener('DOMContentLoaded', () => {
     console.log("Ji");
 
-    function toggleHide() {
-      var x = document.querySelector(".nav-items-list");
-      x.classList.toggle("items-list-hidden")
-    }
+    // function toggleHide() {
+    //   var x = document.querySelector(".nav-items-list");
+    //   x.classList.toggle("items-list-hidden")
+    // }
 
-    toggleHide();
+    // toggleHide();
 
-    document.getElementById("burger").addEventListener("click", function() {
-      toggleHide();
-    })
+    // document.getElementById("burger").addEventListener("click", function() {
+    //   toggleHide();
+    // })
 
     if(window.matchMedia("(max-width: 600px)").matches) {
 

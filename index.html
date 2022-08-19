@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Meghana Holla</title>
-        <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-grey.png"/>
+        <link rel="shortcut icon" type="image/jpg" href="./assets/images/mh-white.png"/>
 
         <meta property="og:url" content="https://meghanaholla.me/">
         <meta property="og:title" content="Meghana Holla">
@@ -58,223 +58,158 @@
 
     <body class="main-font">
     <div class="box">
-    <div id="burger" ><i class="icon fa fa-bars"></i></div>      
     <div class="header">
         <div style="clear:both"></div>
         <div class="name-section">
-            
-            <img src="./assets/images/mh-white.png" style="width:100px; height:100px;margin:auto;">
-            <h1>Meghana Holla</h1>
-            
-            <div style="margin:auto; justify-content: space-around;display: flex;">
-                <a href="https://www.linkedin.com/in/meghana-holla" class="icon fa fa-linkedin"></a>
-                <a href="https://github.com/meghana-holla" class="icon fa fa-github"></a>
-                <!-- <a href="#" class="icon fa fa-twitter"></a> -->
-                <a href="https://scholar.google.com/citations?user=kl_pNCwAAAAJ&hl=en"><i class="icon ai ai-google-scholar"></i></a>
-                <a href="mailto:mmeghana@vt.edu" class="icon fa fa-envelope-o"></a>
-            </div>
+          <h1><a href="#">Meghana Holla</a></h1>
+            <img id="profile-pic" src="assets/images/meghana-pic.JPG">
+            <div style="margin:auto;">
+              <a href="https://www.linkedin.com/in/meghana-holla" class="icon fa fa-linkedin"></a>
+              <a href="https://github.com/meghana-holla" class="icon fa fa-github"></a>
+              <a href="https://scholar.google.com/citations?user=kl_pNCwAAAAJ&hl=en"><i class="icon ai ai-google-scholar"></i></a>
+              <a href="mailto:mmeghana@vt.edu" class="icon fa fa-envelope"></a>
+              <a href="assets/docs/cv.pdf" class="icon"></i><small>CV</small></i></a>
+          </div>
         </div>
         <div class="nav-items-list">
-            <div class="nav-items"><a href="#about-me">About Me</a></div>
             <div class="nav-items"><a href="#publications">Publications</a></div>
-            <div class="nav-items"><a href="#work-experience">Work Experience</a></div>
-            <div class="nav-items"><a href="#resume" onclick="window.open('https://drive.google.com/file/d/1HGAzkQsYQM9KuGSKh6ykK7lsF4AehjBw/view?usp=sharing')">Resume</a></div>
+            <div class="nav-items"><a href="#work-experience">Experience</a></div>
+            <div class="nav-items"><a href="#projects">Projects</a></div>
         </div>
     </div>
     <div class="content-new">
-        <div class="content-item" id="about-me" style="padding:20px; padding-top:2em;">
-            <img id="profile-pic" src="assets/images/meghana-pic.JPG">
-            <h2>About Me</h2>
-            <p>
-              Hello! I am a Graduate Student at Virginia Tech pursuing my Master of Science in Computer Science. My coursework mainly focuses on the areas of Machine Learning & Artifical Intelligence, Data & Information and Human Computer Interaction. I am part of Dr. Ismini Lourentzou’s research group and am working on Multimodal Machine Learning (ML) catering to language and vision, specifically, Natural Language Grounding in Videos.
-            </p>
-            <p>
-              I hold a Bachelor’s (B.Tech) degree in Computer Science and Engineering with specialization in Data Science from PES University, Bangalore, India. My undergraduate thesis titled "Dialog-Driven Face Generation usin GANs" falls in the area of conditional image generation. To elaborate, the work caters to the problem of generating a human face conditioned upon a natural language description. The contributions of the work were two-fold:
-            </p>
+      <div class="content-item" id="about-me" style="padding:20px; padding-top:2em;">
+            I am a Computer Science Master's student at <a href="https://cs.vt.edu">Virginia Tech</a>, advised by <a href="https://isminoula.github.io/">Dr. Ismini Lourentzou</a>. I am a member of the PLAN (Perception + LANguage) Lab and the <a href="https://sanghani.cs.vt.edu/" target="blank">Sanghani Center for Artificial Intelligence and Data Analytics</a> @ Virginia Tech. I obtained my Bachelors in Computer Science and Engineering, with a specialization in Data Science from <a href="https://pes.edu">PES University</a>, Bangalore, India. My graduate coursework at VT mainly focuses on the areas of <code>Machine Learning & Artificial Intelligence</code>, <code>Data & Information</code> and <code>Human Computer Interaction</code>.
+            <br><br>
+            <h5>Research Focus</h5>
+            My research focuses on application of neural and symbolic methods to problems in language (textual) modality as well as those at the intersection of language and vision. Specifically, I am interested in exploring the adoption of commonsense understanding and reasoning to vision+language tasks. One could summarize my research focus as:
+            <center><code>Language + Vision + Knowledge</code></center>
+            <h5>Current Research</h5>
+            I am currently working on:
             <ol>
-              <li>
-                A description-driven face generation module, which is capable of generating a face and also making corrections to the generated face through iterative natural language feedback. The multi-pass nature enables a communication with the generator model to be in the form of a dialog.
-              </li>
-              <li>
-                An effective pipeline which includes a speech-to-text module for ergonomic interfacing, making interactions with the model more organic.
-              </li>
+              <li>Commonsense-driven grounding of natural language queries to raw video data: Researching neuro-symbolic methodologies for language grounding in raw videos.</li>
+              <li>Semantic contrastive pre-training: Multimodal pre-training using multimodal transformers</li>
             </ol>
-            <p>The work was <a id="normal-link" href="https://doi.org/10.1109/ICTAI50040.2020.00104">accepted</a> for publication at the 32nd IEEE International Conference
-              on Tools with Artificial Intelligence (ICTAI 2020) held in Baltimore, MD (Acceptance rate: 25%)</p>
-
-            <h4>Research Focus</h4>
-            <div class="fancy-list">
-                <div class="fancy-item">
-                  <span></span>
-                  Natural Language Processing<br>
-                </div>
-                <div class="fancy-item"><span></span>Multimodal ML (Vision and Text)</div>
-                <div class="fancy-item"><span></span>Zero-Shot Learning</div>
-                <div class="fancy-item"><span></span>Multimodal Information Retrieval</div>
+            <h5>Academic Service</h5>
+            <div class="lists">
+              <span class="title">Reviewer | 
+                <b>EMNLP 2022</b>
+              </span>
+              <span class="date">July 2022</span>
             </div>
             <br>
-            <h4>Skills</h4>
 
-            <b>Programming Languages:</b>
-            <ul class="skill-list">
-              <li>
-                Proficient: 
-                <span class="skill">Python</span>
-                <span class="skill">C</span>
-                <span class="skill">Java</span>
-              </li>
-              <li>
-                Intermediate:
-                <span class="skill">C++</span>
-                <span class="skill">JavaScript</span>
-                <span class="skill">R</span>
-              </li>
-              <li>
-                Familiar:
-                <span class="skill">Matlab</span>
-              </li>
-            </ul>
-            <b>Frameworks and Tools:</b>
-            <ul class="skill-list">
-                <li>
-                  Machine Learning: 
-                  <span class="skill">PyTorch</span>
-                  <span class="skill">Keras</span>
-                  <span class="skill">Tensorflow</span>
-                  <span class="skill">NLTK</span>
-                  <span class="skill">Spacy</span>
-                </li>
-                <li>
-                  Web Development: 
-                  <span class="skill">Flask</span>
-                  <span class="skill">Django</span>
-                  <span class="skill">Spring</span>
-                  <span class="skill">Angular</span>
-                  <span class="skill">HTML</span>
-                  <span class="skill">CSS</span>
-                </li>
-                <li>
-                  Search:
-                  <span class="skill">Apache Solr</span>
-                  <span class="skill">Lucidworks Fusion</span>
-                  <span class="skill">Azure Cognitive Search (Familiar)</span>
-                </li>
-                <li>
-                  Miscelleaneous:
-                  <span class="skill">Git</span>
-                  <span class="skill">Docker</span>
-                  <span class="skill">AWS</span>
-                  <span class="skill">TeamCity</span>
-                </li>
-              </ul>
-        </div>
-        <div class="content-item" id="publications" style="padding:20px;">
+            <h5>News</h5>
+            <div class="job-item">
+              <div class="job-left">
+                June 2022
+              </div>
+            <div class="job-right-plain">
+                &#127942; Honored to be the recipient of the Grace Hopper Celebration (GHC) 2022 Student Scholarship awarded by <a target="blank" href="https://cs.vt.edu">CS@VT</a>!
+            </div>
+            </div>
+            <div class="job-item">
+              <div class="job-left">
+                May 2022
+              </div>
+            <div class="job-right-plain">
+                &#128187; Summer Internsip @ Bloomberg LP as a Machine Learning Intern begins!
+            </div>
+            </div>
+            <div class="job-item">
+              <div class="job-left">
+                August 2021
+              </div>
+            <div class="job-right-plain">
+                &#128218; Joined the MS in Computer Science program at Virginia Tech
+            </div>
+            </div>
+      </div>
+
+      <div class="content-item" id="publications" style="padding:20px;">
             <h2>Publications</h2>
-            <ul>
-              <li>
                 <div>
                   <span class="paper-title">
                     Dialog Driven Face Construction using GANs - ICTAI 2020
                   </span><br>
                   <span class="paper-authors">
-                    Malaika Vijay, Meghana, Nishant Aklecha, Ramamoorthy Srinath
+                    Malaika Vijay, <b>Meghana</b>, Nishant Aklecha, Ramamoorthy Srinath
                   </span>
                   <br>
                   <span class="paper-links">
-                    <span class="paper-link">
-                      <a target="blank" href="https://doi.org/10.1109/ICTAI50040.2020.00104">Paper</a>
-                    </span>
-                    <span class="paper-link">
-                      <a target="blank" href="assets/docs/DialogDrivenFaceGeneration.pdf">Slides</a>
-                    </span>
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <span class="paper-title">
-                    Detection of Emphasis Words in Short Texts – A Context Aware Label Distribution Learning Approach" - ICAICR 2020
-                  </span><br>
-                  <span class="paper-authors">
-                    Meghana, Bhaskarjyoti Das
-                  </span>
-                  <br>
-                  <span class="paper-links">
-                    <span class="paper-link">
-                      <a target="blank" href="https://doi.org/10.1007/978-981-16-3660-8_32">Paper</a>
-                    </span>
-                    <span class="paper-link">
-                      <a target="blank" href="assets/docs/EmphasisDetection.pdf">Slides</a>
-                    </span>
+                    <a target="blank" href="https://doi.org/10.1109/ICTAI50040.2020.00104">&#128221</a>
+                    <a target="blank" href="assets/docs/DialogDrivenFaceGeneration.pdf">&#128193</a>
                     
                   </span>
                 </div>
-              </li>
-              <li>
+                
+                <div>
+                  <span class="paper-title">
+                    Detection of Emphasis Words in Short Texts – A Context Aware Label Distribution Learning Approach - ICAICR 2020
+                  </span><br>
+                  <span class="paper-authors">
+                    <b>Meghana</b>, Bhaskarjyoti Das
+                  </span>
+                  <br>
+                  <span class="paper-links">
+                    <a target="blank" href="https://doi.org/10.1007/978-981-16-3660-8_32">&#128221</a>
+                    <a target="blank" href="assets/docs/EmphasisDetection.pdf">&#128193</a>
+
+                    
+                  </span>
+                </div>
+                
                 <div>
                   <span class="paper-title">
                     Polarity Estimation in a Signed Social Graph Using Graph Features - SCEECS 2020
                   </span><br>
                   <span class="paper-authors">
-                    Meghana Holla, Nishant Aklecha, Ornella I. Dsouza and Bhaskarjyoti Das
+                    <b>Meghana Holla</b>, Nishant Aklecha, Ornella I. Dsouza and Bhaskarjyoti Das
                   </span>
                   <br>
                   <span class="paper-links">
-                    <span class="paper-link">
-                      <a target="blank" href="https://doi.org/10.1109/SCEECS48394.2020.145">Paper</a>
-                    </span>
+                    <a target="blank" href="https://doi.org/10.1109/SCEECS48394.2020.145">&#128221</a>
                   </span>
                 </div>
-              </li>
-              <li>
+              
                 <div>
                   <span class="paper-title">
                     On Detectors and Descriptors based Techniques for Face Recognition - ICCIDS 2018
                   </span><br>
                   <span class="paper-authors">
-                    Vinay A, Nishant Aklecha,  Meghana, K.N. Balasubramanya Murthy, S Natarajan
+                    Vinay A, Nishant Aklecha,  <b>Meghana</b>, K.N. Balasubramanya Murthy, S Natarajan
                   </span>
                   <br>
                   <span class="paper-links">
-                    <span class="paper-link">
-                      <a target="blank" href="https://doi.org/10.1016/j.procs.2018.05.106">Paper</a>
-                    </span>
+                    <a target="blank" href="https://doi.org/10.1016/j.procs.2018.05.106">&#128221</a>
                   </span>
                 </div>
-              </li>
-            </ul>
       </div>
 
       <div class="content-item" id="work-experience" style="padding:20px;">
-        <h2>Work Experience</h2>
-        <h4>Research and Teaching Experience</h4>
+        <h2>Experience</h2>
+        <h4>Teaching</h4>
+        <div class="lists">
+          <span class="title"><b>CS1114 - Introduction to Software Design</b> by Prof. Dwight Barnette
+          </span>
+          <span class="date">Spring 2022</span>
+        </div>
+        <div class="lists">
+          <span class="title"><b>CS2505 - Computer Architecture I</b> by Prof. William McQuain and Prof. David McPherson
+          </span>
+          <span class="date">Fall 2021</span>
+        </div>
+        <br>
+        <h4>Research</h4>
         <div class="job-item">
           <div class="job-left">
             Sept 2021 - Present
           </div>
         <div class="job-right">
-            <b>Virginia Tech</b>
-            <br>
-            <b>Graduate Research</b>
-            <br>
-            Student Researcher working with Dr. Ismini Lourentzou; Conducting research on Multimodal Machine Learning (Text+Video)
+            <p>PLAN (Perception + LANguage) Lab @ VT</p>
+            <p>Graduate Researcher</p>
+            Research: Commonsense-driven langauge grounding in video data with focus on low annotation costs.
         </div>
-        </div>
-
-        <div class="job-filler"></div>
-        <div class="job-item">
-          <div class="job-left">
-            Aug 2021 - Present
-          </div>
-          <div class="job-right">
-            <b>Virginia Tech Department of Computer Science</b>
-            <br>
-            <b>Graduate Teaching Assistant</b>
-            <br>
-            Fall 2021 - Computer Organization 1
-            <br>
-            Spring 2022 - Introduction to Software Design
-          </div>
         </div>
         <div class="job-filler"></div>
         <div class="job-item">
@@ -282,25 +217,32 @@
             Aug 2017 - Dec 2019
           </div>
           <div class="job-right">
-            <b>Center for Pattern Recognition and Machine Intelligence, PES University</b>
-            <br>
-            <b>Undergraduate Research Assistant</b>
-            <br>
-            Conducted research on Facial Recognition and Semantic Segmentation of clothing images
+            <p>Center for Pattern Recognition and Machine Intelligence, PES University</p>
+            <p>Undergraduate Research Assistant</p>
+            Research: Facial Recognition driven by keypoint feature detectors and descriptors; Semantic Segmentation of clothing images
           </div>
         </div>
         <br>
         <h4>Professional Experience</h4>
         <div class="job-item">
           <div class="job-left">
+            May 2022 - Aug 2022
+          </div>
+          <div class="job-right">
+            <p>Bloomberg LP</p>
+            <p>ML Intern</p>
+            &#128736  PyTorch, Python
+          </div>
+        </div>
+        <div class="job-filler"></div>
+        <div class="job-item">
+          <div class="job-left">
             Aug 2020 - Aug 2021
           </div>
           <div class="job-right">
-            <b>Morgan Stanley</b>
-            <br>
-            <b>Technology Associate</b>
-            <br>
-            Technologies: Python, Java, Apache Solr, Lucidworks Fusion, Kafka, KSQL
+            <p>Morgan Stanley</p>
+            <p>Technology Associate</p>
+            &#128736  Python, Java, Apache Solr, Lucidworks Fusion, Kafka, KSQL
           </div>
         </div>
         <div class="job-filler"></div>
@@ -309,11 +251,9 @@
             Jan 2020 - Jun 2020
           </div>
           <div class="job-right">
-            <b>Morgan Stanley</b>
-            <br>
-            <b>Technology Analyst Intern</b>
-            <br>
-            Technologies: Python (Flask), Angular, DB2
+            <p>Morgan Stanley</p>
+            <p>Technology Analyst Intern</p>
+            &#128736  Python (Flask), Angular, DB2
           </div>
         </div>
         <div class="job-filler"></div>
@@ -322,11 +262,9 @@
             May 2019 - Jul 2019
           </div>
           <div class="job-right">
-            <b>Morgan Stanley</b>
-            <br>
-            <b>Summer Analyst</b> 
-            <br>
-            Technologies: Java, Angular, D3.js
+            <p>Morgan Stanley</p>
+            <p>Summer Analyst</p> 
+            &#128736  Java, Angular, D3.js
           </div>
         </div>
         <div class="job-filler"></div>
@@ -335,22 +273,69 @@
             July 2018 - Aug 2018
           </div>
           <div class="job-right">
-            <b>MapmyIndia</b>
-            <br>
-            <b>Machine Learning Intern</b>
-            <br>
-            Technologies: Python, Tensoflow, Linux
+            <p>MapmyIndia</p>
+            <p>Machine Learning Intern</p>
+            &#128736  Python, Tensoflow, Linux
           </div>
         </div>
-    </div>
+      </div>
 
+      <div class="content-item" id="projects" style="padding:20px;">
+        <h2>Selected Projects</h2>
+        <div>
+          <pname>Dialog-Driven Face Generation + Modification | <a class="link-paper" href="https://doi.org/10.1109/ICTAI50040.2020.00104">&#128221</a></pname>
+          <ptech>&#128736 
+            <tech>Python</tech> <tech>Tensorflow</tech>
+          </ptech>
+          <parea>&#128288 
+            <tech>Language + Vision</tech> <tech>Image Generation</tech>
+          </parea>
 
-    <div class="content-item" id="resume" style="padding:20px;min-height:65vh;">
-      <h2>Resume</h2>
-      You can find my resume <a id="normal-link" href="https://drive.google.com/file/d/1HGAzkQsYQM9KuGSKh6ykK7lsF4AehjBw/view?usp=sharing">here</a>
+          <pdesc>
+            <p>Designed and developed a description-driven face generation module capable of generating and making corrections to a face through iterative natural language feedback</p>
+            <p>Additionally developed an end-to-end pipeline a speech-to-text module for ergonomic interfacing</p>
+            <p>The multi-pass nature enables a dialog-based communication with the generator model</p>
+            <p>Published at the 32nd IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2020) held in Baltimore, MD (Acceptance rate: 25%)</p>
+          </pdesc>
+        </div>
+        <div>
+          <pname>
+            Emphasis Detection in Short Texts | <a class="link-paper" href="https://doi.org/10.1007/978-981-16-3660-8_32">&#128221</a>
+          </pname>
+          <ptech>&#128736 
+            <tech>Python</tech> <tech>Keras</tech>
+          </ptech>
+          <parea>&#128288 
+            <tech>Sequence Lableling</tech> <tech>Natural Language Understanding</tech>
+          </parea>
+          <pdesc>
+            <p>Proposed a methodology for token-wise estimation of degree of emphasis using BiLSTM-CRF with Label Distribution Learning</p>
+            <p>Published at the 4th International Conference on Advanced Informatics for Computing Research (ICAICR 2020)</p>
+          </pdesc>
+        </div>
+        <div>
+          <pname>
+            Purpose-aware Trip Duration Predcition in Bike-Sharing | 
+            <a class="link-code" href="https://github.com/meghana-holla/trip-duration-prediction">&#128421</a>
+            <a class="link-paper" href="https://github.com/meghana-holla/trip-duration-prediction/blob/main/Final_Report.pdf">&#128221</a>
+          </pname>
+          <ptech>&#128736 
+            <tech>Python</tech> <tech>Scikit Learn</tech>
+          </ptech>
+          <parea>&#128288 
+            <tech>Machine Learning</tech> <tech>Graph Theory</tech>
+          </parea>
+          <pdesc>
+            <p>Designed a methodology for duration prediction in bike-sharing context, which is more change-agostic than traditional station-level prediction methods</p>
+            <p>Employed a combination of geographic clustering and purpose-aware categorization of stations in bike-sharing context</p>
+          </pdesc>
+        </div>
       </div>
     </div>
     </div>
+    <footer class="header">
+      <p><a href="#">Meghana Holla</a></p>
+    </footer>
     </body>
 </html>
 
