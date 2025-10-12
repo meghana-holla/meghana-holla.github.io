@@ -1,70 +1,149 @@
-window.addEventListener('DOMContentLoaded', () => {
-    console.log("Ji");
+// Modern Academic Website JavaScript
 
-    // function toggleHide() {
-    //   var x = document.querySelector(".nav-items-list");
-    //   x.classList.toggle("items-list-hidden")
-    // }
-
-    // toggleHide();
-
-    // document.getElementById("burger").addEventListener("click", function() {
-    //   toggleHide();
-    // })
-
-    if(window.matchMedia("(max-width: 600px)").matches) {
-
-      console.log("hello")
-
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          console.log(entry.intersectionRatio)
-          if (entry.intersectionRatio <0.10) {
-              // console.log(document.querySelector(`.header>.nav-items>a[href="#${id}`))
-            document.querySelector(`.nav-items-list`).classList.add('absolute-list');
-          } else {
-            document.querySelector(`.nav-items-list`).classList.remove('absolute-list');
-          }
-        });
-      }, {threshold: [0,0.05,0.1]});
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
     
-      console.group(document.querySelectorAll('.name-section'))
-      
-      document.querySelectorAll('.name-section').forEach((section) => {
-        observer.observe(section);
-      })
-      console.log(document.querySelectorAll('.nav-items>a'))
-      document.querySelectorAll('.nav-items>a').forEach((section) => {
-        section.addEventListener("click", function() {
-          toggleHide();
-          console.log("Hello")
-        })
-      })
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
     }
 
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            if (targetSection) {
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = targetSection.offsetTop - navbarHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 
-    //const observer_mobile
-    if(window.matchMedia("(min-width: 600px)").matches)
-    {    
-      const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        console.log(entry.intersectionRatio, id)
-        var ratio = window.innerHeight*0.51/entry.target.offsetHeight;
-        console.log("RATIO"+ratio)
-        if (entry.intersectionRatio > ratio) {
-            // console.log(document.querySelector(`.header>.nav-items>a[href="#${id}`))
-          document.querySelector(`.header>.nav-items-list>.nav-items>a[href="#${id}"]`).parentElement.classList.add('clicked');
+    // Active navigation highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
+    function highlightActiveNav() {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - navbarHeight - 100;
+            const sectionHeight = section.offsetHeight;
+            
+            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Navbar background on scroll
+    function handleNavbarScroll() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(248, 250, 252, 0.95)';
+            navbar.style.boxShadow = '0 1px 10px rgba(0, 0, 0, 0.05)';
         } else {
-          document.querySelector(`.header>.nav-items-list>.nav-items>a[href="#${id}"]`).parentElement.classList.remove('clicked');
+            navbar.style.background = 'rgba(248, 250, 252, 0.8)';
+            navbar.style.boxShadow = 'none';
         }
-      });
-    }, {threshold: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0], root: document.querySelector("new-content")});
-  
-    
-    document.querySelectorAll('.content-item[id]').forEach((section) => {
-      observer.observe(section);
-    })
-    ;}
-  });
+    }
+
+    // Scroll event listeners
+    window.addEventListener('scroll', function() {
+        highlightActiveNav();
+        handleNavbarScroll();
+    });
+
+    // Initial calls
+    highlightActiveNav();
+    handleNavbarScroll();
+
+    // Intersection Observer for animations (optional enhancement)
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    const animateElements = document.querySelectorAll('.publication-item, .experience-item, .research-area, .beyond-category, .update-item');
+    animateElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+
+    // Form handling (if you add contact forms later)
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add form handling logic here
+            console.log('Form submitted');
+        });
+    });
+
+    // External link handling
+    const externalLinks = document.querySelectorAll('a[href^="http"]');
+    externalLinks.forEach(link => {
+        if (!link.hasAttribute('target')) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+
+    // Keyboard navigation support
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+        }
+    });
+
+    // Print optimization
+    window.addEventListener('beforeprint', function() {
+        // Expand any collapsed sections for printing
+        const collapsedElements = document.querySelectorAll('.collapsed');
+        collapsedElements.forEach(el => el.classList.remove('collapsed'));
+    });
+
+    console.log('Academic website initialized successfully');
+});
 
